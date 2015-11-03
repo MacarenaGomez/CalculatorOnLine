@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Online Calculator</title>
+  </head>
+  <body>
+    <h1>Online Calculator</h1>
+    <img src="logo.jpg">
+      <form action="/" method="POST">
+        <label for="first_number">First number:</label>
+        <input type="number" name="first_number" placeholder="Write the first num" value="<%=@first_number %>"> 
+        <label for="second_number">Second number:</label>
+        <input type="number" name="second_number" placeholder="Write the second num">
+        <button type="submit" name="operation" value="addition">Add</button>
+        <button type="submit" name="operation" value="substraction">Sub</button>
+        <button type="submit" name="operation" value="multiply">Mul</button>
+        <button type="submit" name="operation" value="division">Div</button>
+        <button type="submit" name="storage" value="<%=@result%>">Storage</button>
+        <button type="submit" name="calculate">Calculate again</button>
+      </form>
+      <p> <%= @show_result %> </p>
+    <!--   <form action="/hour" method="POST">
+        <button type="submit" name="" value="">Time in New York</button>
+        <button type="submit" name="" value="">Time in Tokyo</button>
+      </form> -->
+  </body>
+</html>
